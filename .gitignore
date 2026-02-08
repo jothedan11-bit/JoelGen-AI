@@ -1,3 +1,36 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Expo files
 .expo/
+dist/
+web-build/
+
+# Native folders (CRUCIAL: This fixes the gradlew error)
 android/
+ios/
+
+# Local Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Build files
+*.apk
+*.aab
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.iml
+.DS_Store
