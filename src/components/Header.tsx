@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native'; // Added Image here
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import { Settings, Moon, Sun } from "lucide-react-native";
 import { useTheme } from "./ThemeProvider";
 
@@ -10,13 +10,12 @@ export const Header = () => {
     <View style={styles.header}>
       <View style={styles.container}>
         <View style={styles.logoRow}>
-          {/* --- LOGO IMAGE START --- */}
+          {/* --- LOGO IMAGE FIXED FOR APK --- */}
           <Image 
-            source={require('../assets/logo.png')} // Make sure it matches your filename (logo.png or Logo.png)
+            source={require('../assets/icon.png')} // Changed to icon.png because logo.png does not exist
             style={styles.logoImage}
             resizeMode="contain"
           />
-          {/* --- LOGO IMAGE END --- */}
           <Text style={styles.brandText}>JoelGen AI</Text>
         </View>
 
@@ -48,7 +47,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: 80,
-    backgroundColor: 'rgba(0,0,0,0.8)', // Made a bit darker for better visibility
+    backgroundColor: 'rgba(0,0,0,0.8)', 
     zIndex: 50,
     paddingTop: 20,
   },
@@ -63,11 +62,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  // New style for your logo
   logoImage: {
     width: 35, 
     height: 35,
-    borderRadius: 8, // Optional: gives it slightly rounded corners
+    borderRadius: 8,
   },
   brandText: {
     color: 'white',
