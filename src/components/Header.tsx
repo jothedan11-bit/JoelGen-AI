@@ -12,7 +12,7 @@ export const Header = () => {
         <View style={styles.logoRow}>
           {/* --- LOGO IMAGE FIXED FOR APK --- */}
           <Image 
-            source={require('../assets/icon.png')} // Changed to icon.png because logo.png does not exist
+            source={require('../assets/icon.png')} // Confirmed: icon.png exists in your assets folder
             style={styles.logoImage}
             resizeMode="contain"
           />
