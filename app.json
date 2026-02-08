@@ -18,6 +18,11 @@
         "backgroundColor": "#000000"
       },
       "package": "com.jothedan11.joelgenai"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "088f0854-db1e-43bb-8034-68348cac3dbc"
+      }
     }
   }
 }
