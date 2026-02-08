@@ -12,12 +12,18 @@
       "distribution": "internal",
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_GEMINI_API_KEY": "PASTE_YOUR_REAL_API_KEY_HERE"
       }
     },
     "production": {
       "autoIncrement": true,
       "android": {
         "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_GEMINI_API_KEY": "PASTE_YOUR_REAL_API_KEY_HERE"
       }
     }
   },
