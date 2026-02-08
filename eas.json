@@ -14,7 +14,7 @@
         "buildType": "apk"
       },
       "env": {
-        "EXPO_PUBLIC_GEMINI_API_KEY": "PASTE_YOUR_REAL_API_KEY_HERE"
+        "EXPO_PUBLIC_GEMINI_API_KEY": "AIzaSyCtuBin4m9fHgtilyIpFIT1DUlejmo_5tQ"
       }
     },
     "production": {
@@ -23,7 +23,7 @@
         "buildType": "app-bundle"
       },
       "env": {
-        "EXPO_PUBLIC_GEMINI_API_KEY": "PASTE_YOUR_REAL_API_KEY_HERE"
+        "EXPO_PUBLIC_GEMINI_API_KEY": "AIzaSyCtuBin4m9fHgtilyIpFIT1DUlejmo_5tQ"
       }
     }
   },
