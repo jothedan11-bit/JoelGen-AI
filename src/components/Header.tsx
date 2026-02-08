@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native'; // Added Image here
 import { Settings, Moon, Sun } from "lucide-react-native";
 import { useTheme } from "./ThemeProvider";
 
@@ -10,9 +10,13 @@ export const Header = () => {
     <View style={styles.header}>
       <View style={styles.container}>
         <View style={styles.logoRow}>
-          <View style={styles.iconCircle}>
-            <Text style={styles.iconText}>J</Text>
-          </View>
+          {/* --- LOGO IMAGE START --- */}
+          <Image 
+            source={require('../assets/logo.png')} // Make sure it matches your filename (logo.png or Logo.png)
+            style={styles.logoImage}
+            resizeMode="contain"
+          />
+          {/* --- LOGO IMAGE END --- */}
           <Text style={styles.brandText}>JoelGen AI</Text>
         </View>
 
@@ -44,7 +48,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: 80,
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    backgroundColor: 'rgba(0,0,0,0.8)', // Made a bit darker for better visibility
     zIndex: 50,
     paddingTop: 20,
   },
@@ -59,17 +63,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  iconCircle: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: '#8b5cf6',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  iconText: {
-    color: 'white',
-    fontWeight: 'bold',
+  // New style for your logo
+  logoImage: {
+    width: 35, 
+    height: 35,
+    borderRadius: 8, // Optional: gives it slightly rounded corners
   },
   brandText: {
     color: 'white',
